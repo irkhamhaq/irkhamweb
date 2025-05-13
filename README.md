@@ -2,7 +2,7 @@
 
 
 ### 1. Linux Fundamental
-#### 1.1 [https://github.com/irkhamhaq/irkhamweb/blob/main/Linux.md)
+#### 1.1 [Linux command](https://github.com/irkhamhaq/irkhamweb/blob/main/Linux.md)
 # NOTE COMMAND
 
 
