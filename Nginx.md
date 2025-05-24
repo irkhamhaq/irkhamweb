@@ -4,8 +4,10 @@
 
 
 ## Checking your Web Server
-### Digunakan untuk memeriksa system untuk memastikan layanannya berjalan dengan cara mengetik didalam terminal
+### Digunakan untuk memeriksa system untuk memastikan layanannya berjalan dengan cara mengetik didalam terminal\
+``` bash
 * systemctl status nginx
+```
 * output : nginx.service - A high performance web server and a reverse proxy server
    Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
    Active: active (running) since Fri 2022-03-01 16:08:19 UTC; 3 days ago
