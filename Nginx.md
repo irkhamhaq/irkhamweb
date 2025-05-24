@@ -1,13 +1,13 @@
 ## Installing Nginx
+``` bash
 * sudo apt update
 * sudo apt install nginx :  Command ini digunakan untuk menginstall Nginx.
 
-
+```
 ## Checking your Web Server
-### Digunakan untuk memeriksa system untuk memastikan layanannya berjalan dengan cara mengetik didalam terminal\
+### Digunakan untuk memeriksa system untuk memastikan layanannya berjalan dengan cara mengetik didalam terminal
 ``` bash
 * systemctl status nginx
-```
 * output : nginx.service - A high performance web server and a reverse proxy server
    Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
    Active: active (running) since Fri 2022-03-01 16:08:19 UTC; 3 days ago
@@ -19,20 +19,26 @@
            ├─2369 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
            └─2380 nginx: worker process
   .
-
+```
 ## Setting Up Vhost Domain
-#### Command mkdir untuk membuat directory baru.
+#### Command ```mkdir``` untuk membuat directory baru.
+``` bash
    * sudo mkdir -p /var/www/your_domain/html
-
-#### Command chown untuk menetapkan kepemilikan dengan menggunakan variabel $USER.
+```
+#### Command ```chown``` untuk menetapkan kepemilikan dengan menggunakan variabel $USER.
+``` bash
    * sudo chown -R $USER:$USER /var/www/your_domain/html 
-
-#### Command  chmod untuk mengeksekusi berkas & memberikan izin untuk membaca dan eksekusi.
+```
+#### Command ``` chmod``` untuk mengeksekusi berkas & memberikan izin untuk membaca dan eksekusi.
+``` bash
    * sudo chmod -R 755 /var/www/your_domain 
+```
+#### Command ```var``` untuk membuat contoh halaman index.html.
+``` bash
 
-#### Command var untuk membuat contoh halaman index.html.
 * nano /var/www/your_domain/html/index.html
-
+```
+``` bash
 * <html>
     <head>
         <title>Welcome to your_domain!</title>
@@ -41,14 +47,14 @@
         <h1>Success!  The your_domain server block is working!</h1>
     </body>
 </html>
+```
 
 
-
-####  Command sites-available untuk menyajikan konten yang telah dibuat.
-  bash
+####  Command ```sites-available``` untuk menyajikan konten yang telah dibuat.
+ ``` bash
    sudo nano /etc/nginx/sites-available/your_domain
-  
-   bash
+ ``` 
+  ``` bash
        server {
               listen 80;
               listen [::]:80;
@@ -62,18 +68,22 @@
                       try_files $uri $uri/ =404;
               }
          }
-   
-#### Command sites-enabled untuk mengaktifkan file yang dapat dibaca oleh Nginx saat startup.
-  bash
+   ```
+#### Command ```sites-enabled``` untuk mengaktifkan file yang dapat dibaca oleh Nginx saat startup.
+ ``` bash
 * sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/ 
-#### Command nginx.conf untuk menghindari kemungkinan masalah pada memori hash bucket.
+```
+#### Command ```nginx.conf``` untuk menghindari kemungkinan masalah pada memori hash bucket.
+``` bash
 * sudo nano /etc/nginx/nginx.conf
-
-#### Command nginx -t untuk memastikan tidak ada masalah syntax dalam salah satu file Nginx.
+```
+#### Command ```nginx -t``` untuk memastikan tidak ada masalah syntax dalam salah satu file Nginx.
+``` bash
 * sudo nginx -t
-
-#### Command restart untuk memulai ulang Nginx.
+```
+#### Command ```restart``` untuk memulai ulang Nginx.
+``` bash
 * sudo systemctl restart nginx
-
+```
 ### Note = Untuk domain diisi dengan domain kita sendiri.
-#### contoh : your_domain menjadi hello.com
+#### contoh : ```your_domain``` menjadi ```hello.com``` 
