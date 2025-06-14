@@ -3,6 +3,7 @@
 
 ### 1. Linux Fundamental
 #### 1.1 [Linux command](https://github.com/irkhamhaq/irkhamweb/blob/main/Linux.md)
+### 2. Nginx 
 # NOTE COMMAND
 
 
