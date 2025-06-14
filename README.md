@@ -5,7 +5,7 @@
 #### 1.1 [Linux command](https://github.com/irkhamhaq/irkhamweb/blob/main/Linux.md)
 ### 2. Nginx Server
 #### 1.1 [Nginx Command](https://github.com/irkhamhaq/irkhamweb/blob/main/Nginx.md)
-### 
+### 1. 
 # NOTE COMMAND
 
 
