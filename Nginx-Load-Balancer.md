@@ -28,10 +28,10 @@
       listen [::]:80; 
       
       server_name your_domain 10.92.101.209;
-```
       location / {
           proxy_pass http://backend;
    proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
       }
    }
+```
