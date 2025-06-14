@@ -3,9 +3,10 @@
 
 ### 1. Linux Fundamental
 #### 1.1 [Linux command](https://github.com/irkhamhaq/irkhamweb/blob/main/Linux.md)
-### 2. Nginx Server
-#### 1.1 [Nginx Command](https://github.com/irkhamhaq/irkhamweb/blob/main/Nginx.md)
-### 1. 
+### 2. Web Server
+#### 2.1 [Web Command](https://github.com/irkhamhaq/irkhamweb/blob/main/Nginx.md)
+### 3. Nginx Load Balancer 
+#### 3.1 [Nginx Load Server Command](
 # NOTE COMMAND
 
 
